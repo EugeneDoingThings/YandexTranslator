@@ -19,7 +19,7 @@ namespace YandexTranslator.ViewModels
         public ICommand Translate { get; set; }
         public string Language { get; set;}
 
-       
+      
 
         private Page _page;
         public TranslateVM(Page page)

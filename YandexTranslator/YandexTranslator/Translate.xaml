@@ -6,10 +6,10 @@
              >
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout Spacing="42" Orientation="Horizontal" HorizontalOptions="Center">
-                <Label  x:Name="FirstLang" Text="Английский" Margin="0, 10, 0, 0" HorizontalOptions="Start" />
-                <Button Text="-" BackgroundColor="#1abc9c" Margin="0, 0, 15, 0"  />
-                <Label  x:Name="SecondLang" Text="Русский" Margin="0, 10, 0, 0" HorizontalOptions="End" />
+            <StackLayout Spacing="42" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label  x:Name="FirstLang" Text="Английский" Margin="0, 15, 0, 0" HorizontalOptions="Start" />
+                <Button Text="en-ru" BackgroundColor="#1abc9c" Clicked="ChangeLang" Margin="0, 0, 17, 0" HorizontalOptions="Center"  />
+                <Label  x:Name="SecondLang" Text="Русский" Margin="0, 15, 0, 0" HorizontalOptions="End" />
             </StackLayout>
             <Editor Text="{Binding Word}"/>
             <Button Text="Перевести"  

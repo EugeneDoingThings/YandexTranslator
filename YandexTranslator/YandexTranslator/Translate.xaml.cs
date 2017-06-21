@@ -15,6 +15,23 @@ namespace YandexTranslator
         public Translate()
         {
             InitializeComponent();
+
+        }
+        private void ChangeLang(object sender, System.EventArgs e)
+        {
+            Button button = (Button)sender;
+            if (button.Text == "en-ru")
+            {
+                FirstLang.Text = "Русский";
+                SecondLang.Text = "Английский";
+                button.Text = "ru-en";
+            }
+            else
+            {
+                SecondLang.Text = "Русский";
+                FirstLang.Text = "Английский";
+                button.Text = "en-ru";
+            }
         }
     }
 }
