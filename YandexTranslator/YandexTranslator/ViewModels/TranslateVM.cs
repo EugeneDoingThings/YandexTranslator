@@ -12,18 +12,14 @@ using Xamarin.Forms;
 
 namespace YandexTranslator.ViewModels
 {
-    public class Output
-    {
-        [JsonProperty(PropertyName = "text")]
-        public string Text { get; set; }
-    }
+ 
     public class TranslateVM
     {
         public string Word { get; set; }
         public ICommand Translate { get; set; }
+        public string Language { get; set;}
 
-      
-
+       
 
         private Page _page;
         public TranslateVM(Page page)
@@ -44,9 +40,15 @@ namespace YandexTranslator.ViewModels
                 {
                     HttpContent responseContent = response.Content;
                     var json = await responseContent.ReadAsStringAsync();
-                    var output = JsonConvert.DeserializeObject <List<Output>>(json);                
+                    var output = JsonConvert.DeserializeObject(json);
+                    //var translation = JsonConvert.DeserializeObject<List<Output>>(json);
                 }
             }
         }
-}
+        //public class Output
+        //{
+        //    [JsonProperty(PropertyName = "text")]
+        //    public string Text { get; set; }
+        //}
+    }
 }

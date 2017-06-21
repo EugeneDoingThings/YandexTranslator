@@ -6,7 +6,8 @@
              >
     <ContentPage.Content>
         <StackLayout>
-            <Label VerticalOptions="Center" HorizontalOptions="Center" Text='Реализовано с помощью сервиса "API "Яндекс.Словарь"' />
+            <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="«Реализовано с помощью сервиса «Яндекс.Переводчик»" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
