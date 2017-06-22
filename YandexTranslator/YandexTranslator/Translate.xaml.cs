@@ -12,6 +12,8 @@ namespace YandexTranslator
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Translate : ContentPage
     {
+        string direction = "en-ru";
+        int count = 1;
         public Translate()
         {
             InitializeComponent();
@@ -19,18 +21,18 @@ namespace YandexTranslator
         }
         private void ChangeLang(object sender, System.EventArgs e)
         {
-            Button button = (Button)sender;
-            if (button.Text == "en-ru")
+            count += 1; //Button button = (Button)sender;
+            if (count%2 == 0)
             {
                 FirstLang.Text = "Русский";
                 SecondLang.Text = "Английский";
-                button.Text = "ru-en";
+                direction = "ru-en";
             }
             else
             {
                 SecondLang.Text = "Русский";
                 FirstLang.Text = "Английский";
-                button.Text = "en-ru";
+                direction = "en-ru";
             }
         }
     }
