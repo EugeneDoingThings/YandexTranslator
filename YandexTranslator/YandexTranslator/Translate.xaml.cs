@@ -21,12 +21,13 @@ namespace YandexTranslator
         }
         private void ChangeLang(object sender, System.EventArgs e)
         {
-            count += 1; //Button button = (Button)sender;
+            count += 1; 
             if (count%2 == 0)
             {
                 FirstLang.Text = "Русский";
                 SecondLang.Text = "Английский";
                 direction = "ru-en";
+
             }
             else
             {

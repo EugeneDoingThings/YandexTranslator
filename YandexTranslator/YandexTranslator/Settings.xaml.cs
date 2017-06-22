@@ -16,5 +16,9 @@ namespace YandexTranslator
         {
             InitializeComponent();
         }
+        void OnButtonClicked(object sender,EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://tech.yandex.ru/dictionary/"));
+        }
     }
 }

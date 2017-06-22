@@ -7,10 +7,24 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <StackLayout Spacing="42" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label  x:Name="FirstLang" Text="Английский" Margin="0, 15, 0, 0" />
-                <Button Text="" Image="ic_swap_horiz_black_24dp.png"  BackgroundColor="#FFDC61" Clicked="ChangeLang" Margin="0, 0, 17, 0" HorizontalOptions="Center"  />
-                <Label  x:Name="SecondLang" Text="Русский" Margin="0, 15, 0, 0"  />
+                <Label  x:Name="FirstLang" Text="Английский" TextColor="Black" Margin="0, 15, 0, 0" />
+                <Button Text="" Image="ic_swap_horiz_black_24dp.png"  BackgroundColor="Transparent" Clicked="ChangeLang" Margin="0, 0, 17, 0" HorizontalOptions="Center"  />
+                <Label  x:Name="SecondLang" Text="Русский" TextColor="Black" Margin="0, 15, 0, 0"  />
             </StackLayout>
+          <!--<Grid HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label  x:Name="FirstLang" Text="Английский" TextColor="Black" Margin="0, 15, 0, 0" />
+            <Button Text="" Image="ic_swap_horiz_black_24dp.png"  BackgroundColor="Transparent" Clicked="ChangeLang" Margin="0, 0, 17, 0" HorizontalOptions="Center"  />
+            <Label  x:Name="SecondLang" Text="Русский" TextColor="Black" Margin="0, 15, 0, 0"  />
+          </Grid>-->    
+              
             <Editor Text="{Binding Word}"/>
             <Button Text="Перевести"  
                     Command="{Binding Translate}" BackgroundColor="#FFDC61"/>
