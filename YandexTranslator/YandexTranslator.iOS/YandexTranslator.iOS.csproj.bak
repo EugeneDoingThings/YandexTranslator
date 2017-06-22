@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>YandexTranslator.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>YandexTranslatoriOS</AssemblyName>
+    <AssemblyName>YandexTranslator.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
